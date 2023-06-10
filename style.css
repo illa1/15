@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+*{
+	padding:0;
+	margin:0;
+}
+*{
+	text-shadow:1px 1px 2px white;
+}
+*{
+	font-family:'Marck Script';
+}
+br{
+	text-align: center;
+}
+span{
+	text-decoration:underline;
+}
+body{
+	background-color:#a0e2e3;
+}
+div{
+	border:5px solid white;
+}
+p{
+	font-size:25px;
+}
+.container{
+	display:grid;
+	
+	grid-template-columns:repeet(3 auto);
+	grid-template-rows:auto auto  auto  auto ;
+	
+	grid-template-areas:
+	"a1 a1 a1"
+	"a2 a3 a4"
+	"a5 a5 a6"
+	"a7 a7 a6";
+	
+	grid-gap:10px;
+}
+.a1{
+	grid-area:a1;
+	text-align:center;
+	align-self: center;
+	padding:15px;
+	color:#f750b1;
+	border:5px solid white;
+	margin:0 25%;
+}
+.a2 p{opacity:0; transition:2s;
+	transform: rotateX(-180deg);
+	transform-origin: center top;
+	background-color:black;
+	width:395px;
+	height:570px;
+	color:#e2e24b;
+	padding:15px;
+	border-radius: 0 0 50%;
+}
+.a2:hover p{
+	opacity:0.8;
+	transform:rotateX(0);
+}
+.a2{
+	grid-area:a2;
+	background-image:url(images/london.jpg);
+	width:425px;
+	height:600px;
+}
+.a3{
+	grid-area:a3;
+	background-image:url(images/paris.jpg);
+	width:425px;
+	height:600px;
+}
+.a3 p{opacity:0; transition:2s;
+	transform: rotateY(180deg);
+	background-color:black;
+	width:395px;
+	height:570px;
+	color:#e2e24b;
+	padding:15px;
+}
+.a3:hover p{
+	opacity:0.8;
+	transform: rotateY(0deg);
+}
+.a4{
+	grid-area:a4;
+	padding:15px;
+	text-align:center;
+	align-self: center;
+	color:#f750b1;
+	border:5px solid white;
+}
+.a5{
+	grid-area:a5;
+	background-image:url(images/Turtsiya.jpg);
+	width:850px;
+	height:300px;
+	
+}
+.a5 p{opacity:0; transition: 2s;
+	transform: skewX(-70deg);
+	background-color:black;
+	width:820px;
+	height:270px;
+	color:#e2e24b;
+	padding:15px;
+}
+.a5:hover p{
+	opacity:0.8;
+	transform: skewX(0deg);
+}
+.a6{
+	grid-area:a6;
+	background-image:url(images/venice.jpg);
+	width:425px;
+	height:600px;
+	background-position: center;
+	
+}
+.a6 p{opacity:0; transition:2s;
+	transform: scale(0.3, 0.3);
+	background-color:black;
+	width:395px;
+	height:570px;
+	color:#e2e24b;
+	padding:15px;
+}
+.a6:hover p{
+	opacity:0.8;
+	transform: scale(1, 1);
+}
+.a7{
+	grid-area:a7;
+	text-align:center;
+	align-self: center;
+	color:#f750b1;
+	border:5px solid white;
+	margin: 60px;
+}
+h1:hover{
+	color:black;
+}
+
+
+
